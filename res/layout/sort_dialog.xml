@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <View
+         android:id="@+id/sort_line"
+         android:layout_width="fill_parent"
+         android:layout_height="3dp"
+         android:layout_below="@+id/sort_title"
+         android:layout_marginTop="4dp"
+         android:background="@color/red_light" />
+<RadioGroup 
+    android:id="@+id/rgsort"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_below="@+id/sort_line"
+     >
+    <RadioButton
+        android:id="@+id/rbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+         />
+
+
+    <RadioButton
+        android:id="@+id/rbadded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbname"
+        android:text="Date Added" 
+        android:gravity="right"/>
+
+    <RadioButton
+        android:id="@+id/rbirating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbadded"
+        android:text="IMDB Rating" 
+        android:gravity="right"/>
+
+    <RadioButton
+        android:id="@+id/rburating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbirating"
+        android:text="Your Rating"
+        android:gravity="right" />
+</RadioGroup>
+
+<TextView
+    android:id="@+id/sort_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:padding="5dp"
+    android:textColor="@color/red_light"
+    android:text="@string/sort_title"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_gray">#fff</color>
+    <color name="divider">#5f0c0c</color>
+    <color name="detail">#626262</color>
+    <color name="grey">#cfcfcf</color>
+    <color name="tabs">#f1f1f1</color>
+    <color name="divider_grey">#202020</color>
+    <color name="detail_color">#a01212</color>
+    <color name="transparent">#f2fffff0</color>
+    <color name="transparent_progress">#e6000000</color>
+    <color name="golden">#b39c3b</color>
+    <color name="red_light">#722D34</color>
+    <color name="actionbar_color">#722D34</color>
+    <color name="tab_bar">#262626</color>
+    <color name="help_transparent">#D9000000</color>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:weightSum="1.0"
+    android:baselineAligned="true"  >
+
+    <RelativeLayout
+        android:id="@+id/left_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8" >
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/filmIcon"
+            android:text="year"
+            android:textColor="@color/golden"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/filmIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/democ"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/filmIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/filmIcon"
+            android:text="movie"
+            android:textColor="#040404"
+            android:textSize="18dip"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_item"
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/watched_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:layout_marginTop="25dp"
+            android:textColor="@color/red_light"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/star_watch"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/star"
+            />
+       
+    </RelativeLayout>
+
+</LinearLayout>

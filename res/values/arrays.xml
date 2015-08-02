@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <string-array name="sortArray">  
+        <item>Name</item>  
+        <item>Date Added</item>  
+        <item>IMDB Rating</item>  
+        <item>My Rating</item>  
+   </string-array>
+</resources>

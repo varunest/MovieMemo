@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="515dp" >
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/filmStrip"
+            android:text="TRUE GRIT"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/filmStrip"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/movieName"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/filmstrip" />
+
+        <TextView
+            android:id="@+id/smallDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/filmStrip"
+            android:layout_below="@+id/movieName"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:text="128 min  -  Adventure | Western | Drama  -  11 June 1969 (USA)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail_color"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/abovePoster"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/smallDetails"
+            android:layout_marginTop="4dp"
+            android:background="@color/divider_grey" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/movieName"
+            android:layout_marginTop="2dp"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/posterc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abovePoster"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="150dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/demo" />
+
+            <TextView
+                android:id="@+id/rateValue"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/poster"
+                android:background="@drawable/ratestar"
+                android:gravity="center"
+                android:text="7.4"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <ImageButton
+                android:id="@+id/watchList"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/rateValue"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/poster"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/watchedList"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/watchList"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/poster"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/belowPoster"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/posterc"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/divider_grey" />
+
+        <TextView
+            android:id="@+id/directorfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/belowPoster"
+            android:layout_below="@+id/belowPoster"
+            android:layout_marginTop="8dp"
+            android:text="Director :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/belowPoster"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/directorfix"
+            android:text="Henry Hathaway"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail" />
+
+        <TextView
+            android:id="@+id/writerfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/directorfix"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="1dp"
+            android:text="Writers   :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/writerfix"
+            android:text=" Charles Portis (novel), Marguerite Roberts (screenplay)"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail" />
+
+        <TextView
+            android:id="@+id/starfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/writerfix"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="1dp"
+            android:text="Stars      :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/starfix"
+            android:text="John Wayne, Kim Darby, Glen Campbell"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail" />
+
+        <TextView
+            android:id="@+id/awardfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/starfix"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="1dp"
+            android:text="Awards  :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail_color"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/director"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/writer"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/star"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp" />
+
+        <View
+            android:id="@+id/belowAward"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/award"
+            android:layout_marginTop="4dp"
+            android:background="@color/divider" />
+        
+        <RatingBar android:id="@+id/ratingBar" 
+            style="@style/movieRatingBar"   
+            android:layout_below="@+id/belowAward"
+            android:numStars="10"
+            android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"></RatingBar>
+        
+ <View
+            android:id="@+id/belowRatingBar"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="4dp"
+            android:background="@color/divider" />
+        <TextView
+            android:id="@+id/plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/belowRatingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="PLOT"
+            android:textColor="@color/detail_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/belowPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/plot"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/divider_grey" />
+
+        <TextView
+            android:id="@+id/plotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/belowPlot"
+            android:layout_below="@+id/belowPlot"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:text="deep into the Indian Territory (present day Oklahoma) to find their man."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/awardfix"
+            android:text="Won 1 Oscar"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/detail" />
+    </RelativeLayout>
+
+</ScrollView>

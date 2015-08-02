@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Memo</string>
+    <string name="title_section1">Search</string>
+    <string name="title_section2">Watch List</string>
+    <string name="title_section3">Watched</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Enter Movie Name</string>
+    <string name="restore">Restore</string>
+    <string name="backup">Backup</string>
+    <string name="sort">Sort</string>
+    <string name="sort_title">Sort Movies By :</string>
+	<string name="view_type">Change View</string>
+	<string name="send_to">Share Movie with...</string>
+	<string name="about">About</string>
+</resources>
