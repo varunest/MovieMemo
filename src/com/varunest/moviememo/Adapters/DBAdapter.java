@@ -1,7 +1,7 @@
 // ------------------------------------ DBADapter.java ---------------------------------------------
 
 // TODO: Change the package to match your project.
-package com.varunest.moviememo;
+package com.varunest.moviememo.Adapters;
 
 import android.content.ContentValues;
 import android.content.Context;

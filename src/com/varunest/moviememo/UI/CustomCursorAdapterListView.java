@@ -1,4 +1,4 @@
-package com.varunest.moviememo;
+package com.varunest.moviememo.UI;
 
 import java.io.File;
 
@@ -19,6 +19,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.varunest.moviememo.Adapters.DBAdapter;
+import com.varunest.moviememo.R;
 
 public class CustomCursorAdapterListView extends CursorAdapter {
 
